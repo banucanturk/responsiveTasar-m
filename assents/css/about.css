@@ -1,0 +1,679 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  margin: 0 auto;
+  background: #f2f2f2;
+  font-family: "DM Sans";
+  color: white;
+}
+.container {
+  background-color: #434ccc;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.navbar img {
+  margin-top: 16px;
+}
+@media screen and (max-width: 375px) {
+  .navbar img {
+    width: 62px;
+    height: 32px;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar h3 {
+  width: 102px;
+  height: 48px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin-right: 40%;
+  margin-top: 28px;
+  font-size: 40px;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-top: 16px;
+  margin-left: 40%;
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+.navbar button {
+  color: #ffffff;
+  width: 170px;
+  height: 48px;
+  background-color: #434ccc;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 16px;
+  font-family: "DM Sans";
+}
+.navbar-text h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.navbar-text p {
+  text-align: center;
+  line-height: 32px;
+  font-size: 20px;
+  font-family: "DM Sans";
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-text h1 {
+    font-size: 56px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+  .navbar-text p {
+    left: 65px;
+    top: 169px;
+  }
+  .navbar button {
+    display: none;
+  }
+}
+.middle-area {
+  background: #f2f2f2;
+  height: 2384px;
+  margin: 0 auto;
+}
+
+.voluptatum-list ul {
+  color: black;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 32px;
+}
+.pale-writing {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.middle-area-2 {
+  display: flex;
+  height: 768px;
+  width: 1110px;
+  margin: 0 auto;
+  color: #000000;
+}
+.middle-area-text {
+  flex-basis: 50%;
+}
+.middle-area-text h5 {
+  margin-top: 127px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  padding-bottom: 21px;
+}
+.middle-area-text h2 {
+  font-family: "DM Serif Display";
+  height: 128px;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  padding-bottom: 29px;
+  width: 411px;
+}
+.middle-area-text p {
+  margin-top: 29px;
+  font-size: 20px;
+  line-height: 32px;
+  width: 570px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  .middle-area-text p {
+    margin-top: 29px;
+    font-size: 20px;
+    line-height: 32px;
+    width: 570px;
+    padding-bottom: 30px;
+  }
+}
+.middle-area-image img {
+  left: 482px;
+  top: 301px;
+  position: absolute;
+}
+.middle-area-text-img {
+  display: flex;
+  gap: 48px;
+  padding-bottom: 20px;
+}
+.svg {
+  padding-bottom: 20px;
+}
+.img {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 375px) {
+  .middle-area-text h5 {
+    margin-top: 47px;
+    height: 24px;
+  }
+  .middle-area-text h2 {
+    height: 96px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.container-2 {
+  margin: 0 auto;
+  width: 1110px;
+  height: 760px;
+  font-family: "DM Sans";
+  color: #000000;
+}
+.middle-area-3 {
+  padding: 42px 15px 80px;
+}
+.middle-area-3-text h2 {
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  padding-bottom: 30px;
+}
+.middle-area-3-text p {
+  width: 580px;
+  margin-left: 264px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+.middle-area-3-cards {
+  width: 1170px;
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-2 {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.297017);
+  border-radius: 5px;
+  padding: 64px 32px 21px;
+}
+.arrow {
+  margin: 0 auto;
+}
+
+.card-2 h4 {
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 54px;
+  margin-bottom: 10px;
+}
+
+.card-2 p {
+  color: #00000080;
+  margin-bottom: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #00000080;
+  width: 282px;
+}
+.p1 {
+  height: 115px;
+}
+
+.card-2 a {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+.middle-area-4 {
+  display: flex;
+}
+.middle-area-4 h5 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  margin-top: 127px;
+  margin-bottom: 30px;
+}
+.middle-area-4 h2 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  padding-bottom: 30px;
+  color: #000000;
+}
+.middle-area-4 p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+.middle-area-4-icons {
+  flex-direction: column;
+}
+.middle-area-4-icons p {
+  color: #00000080;
+}
+.middle-area-4-icon {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 33px;
+  margin-bottom: 24px;
+}
+.middle-area-4-icon-1 {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 24px;
+}
+.middle-area-4-icon-2 {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 57px;
+}
+.btn-btn {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 187px;
+
+  font-weight: 700;
+}
+.btn-1 {
+  background-color: #434ccc;
+  height: 48px;
+  width: 170px;
+  border: 1px solid #434ccc;
+  border-radius: 5px;
+  color: #ffffff;
+
+  font-weight: 700;
+}
+.btn-2 {
+  height: 48px;
+  width: 170px;
+  border: 1px solid #434ccc;
+  border-radius: 5px;
+
+  color: #434ccc;
+  background: #f2f2f2;
+}
+.container-3 {
+  background-color: rgba(67, 76, 204, 1);
+  height: 480px;
+  border-radius: 0px;
+}
+.middle-area-5 h2 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 30px;
+}
+.middle-area-5 p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding-right: 335px;
+  padding-left: 335px;
+  padding-bottom: 35px;
+}
+
+.middle-area-5-text {
+  display: flex;
+  gap: 7%;
+  margin-left: 213px;
+  margin-right: 232px;
+  margin-bottom: 113px;
+}
+
+.middle-area-5-text h1 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: center;
+}
+.middle-area-5-text p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container-4 {
+  height: 768px;
+  display: flex;
+  gap: 83px;
+}
+.area-audıam {
+  margin-left: 135px;
+  color: #000000;
+  padding-top: 111px;
+}
+.area-audıam h5 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.3em;
+
+  margin-bottom: 21px;
+}
+.area-audıam h2 {
+  font-family: "DM Serif Display";
+
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 29px;
+}
+.area-audıam p {
+  font-size: 20px;
+  line-height: 32px;
+  height: 230px;
+  width: 338px;
+  margin-bottom: 33px;
+}
+.button {
+  box-sizing: border-box;
+  height: 48px;
+  width: 170px;
+
+  background: #f2f2f2;
+  border: 1px solid #434ccc;
+  border-radius: 5px;
+  color: #434ccc;
+}
+.container-4-icons {
+  margin-right: 135px;
+  padding-top: 156px;
+  color: black;
+}
+.container-4-icons p {
+  height: 80px;
+  width: 270px;
+  left: 635px;
+  top: 3471px;
+  border-radius: nullpx;
+
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.container-4-icons h4 {
+  margin-bottom: 7px;
+}
+.icons-section-1 {
+  display: flex;
+  gap: 40px;
+}
+.icons-section-2 {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 129px;
+}
+
+.icons-section-3 {
+  display: flex;
+  gap: 40px;
+}
+.icon-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-6 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 34px;
+}
+.icon-6 img {
+  height: 47px;
+  width: 50px;
+}
+.container-5 {
+  height: 768px;
+  display: flex;
+}
+.area-image {
+  width: 800px;
+  margin-top: 135px;
+  margin-left: 135px;
+  margin-bottom: 133px;
+}
+.container-5-text {
+  color: #000;
+  margin-top: 191px;
+}
+.container-5-text h5 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 21px;
+  letter-spacing: 0.3em;
+}
+.container-5-text h2 {
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  text-align: left;
+  padding-bottom: 29px;
+}
+.container-5-text p {
+  font-size: 20px;
+  line-height: 32px;
+  width: 470px;
+  padding-bottom: 29px;
+}
+.button-3 button {
+  background-color: #434ccc;
+  height: 48px;
+  width: 170px;
+  border: 1px solid #434ccc;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.container-6 {
+  height: 768px;
+  margin-top: 143px;
+  margin-left: 135px;
+  color: #000;
+}
+.container-6-text h5 {
+  height: 24px;
+  border-radius: nullpx;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  margin-bottom: 21px;
+}
+.container-6-text h2 {
+  width: 342px;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  padding-bottom: 45px;
+}
+.container-6-text p {
+  font-size: 20px;
+  line-height: 32px;
+  padding-bottom: 7px;
+}
+.w3-light-grey {
+  width: 382px;
+  left: 135px;
+  top: 5024px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.container-7 {
+  background-color: #ffdd78;
+  height: 352px;
+  color: #000;
+}
+.container-7-text {
+  margin-left: 135px;
+  margin-right: 135px;
+  padding-top: 79px;
+  padding-right: 496px;
+}
+.container-7-text h5 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+}
+.container-7-text h2 {
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  width: 516px;
+  border-radius: nullpx;
+}
+.email {
+  display: flex;
+}
+.button-group {
+  display: flex;
+  flex-flow: row-reverse;
+  padding-right: 135px;
+  margin-top: -74px;
+  margin-left: 973px;
+}
+.button-4 button {
+  background-color: #434ccc;
+  height: 48px;
+  width: 170px;
+  border: 1px solid #434ccc;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.container-6-image {
+  left: 484px;
+  top: 4576px;
+  position: absolute;
+}
